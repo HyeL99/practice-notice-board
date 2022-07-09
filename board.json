@@ -1,0 +1,28 @@
+{
+  "board": [
+    {
+      "title": "titile1",
+      "content": "content1",
+      "views": 0,
+      "date": "2022-07-08T12:48:29.314Z",
+      "editDate": "",
+      "id": 1
+    },
+    {
+      "title": "titile2",
+      "content": "content2",
+      "views": 0,
+      "date": "2022-07-08T12:48:29.314Z",
+      "editDate": "",
+      "id": 2
+    },
+    {
+      "title": "title3",
+      "content": "content3",
+      "views": 3,
+      "date": "2022-07-08T15:53:33.501Z",
+      "editDate": "",
+      "id": 3
+    }
+  ]
+}

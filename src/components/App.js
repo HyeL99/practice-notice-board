@@ -1,4 +1,4 @@
-import 'C:/Users/A/Desktop/Project/notice-board-practice-react/src/App.css';
+import '../App.css';
 import BoardPage from './views/BoardPage/BoardPage';
 import { Route, Routes } from 'react-router-dom';
 import ArticlePage from './views/ArticlePage/ArticlePage';

@@ -3,8 +3,11 @@ import logger from "redux-logger"
 import createSagaMiddleware from "redux-saga"
 import rootReducer from "./slice/rootSlice"
 import rootSaga from "./sagas/rootSaga"
+import history from "./utils/history"
 
-const sagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = createSagaMiddleware({
+    context: {history: history}
+})
 const initialState={}
 
 const store = configureStore({
