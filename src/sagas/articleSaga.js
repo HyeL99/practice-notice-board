@@ -14,6 +14,7 @@ export function* registerArticleAsync(action) {
   console.log("response.data: ", response.data)
   //history.push(`article/${response.data.id}`)
   history.push(`article/${response.data.id}`, response.data.id)
+  history.go(0)
 }
 
 export function* getArticleAsync(action){
@@ -43,4 +44,14 @@ export function* updateArticleAsync(action) {
   console.log("response.data.id: ", response.data.id)
   //history.push(`article/${response.data.id}`)
   history.push(`article/${response.data.id}`, response.data.id)
+  history.go(0)
+}
+
+export function* deleteArticleAsync(action){
+  const id = action.payload
+  yield Axios.delete(`http://localhost:4040/board/${id}`)
+
+  alert("삭제되었습니다.")
+  history.push(`/`)
+  history.go(0)
 }

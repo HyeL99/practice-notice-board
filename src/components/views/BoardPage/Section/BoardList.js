@@ -1,3 +1,4 @@
+import { Button } from 'antd'
 import React from 'react'
 import {Link} from "react-router-dom"
 
@@ -24,6 +25,9 @@ const BoardList = (props) => {
               <td>{article.title}</td>
             </Link>
             <td>{article.views}</td>
+            <td>
+              <Button onClick={()=>props.handleDeleteClick(article.id)}>X</Button>
+            </td>
           </tr>
         ))}
       </table>

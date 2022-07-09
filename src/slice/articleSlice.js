@@ -19,7 +19,10 @@ export const articleSlice = createSlice({
         },
         updateArticle:(state, {payload:article})=>{
             console.log("게시글 수정 액션 호출 -- updateArticle")
-        }
+        },
+        deleteArticle:(state, {payload: id})=>{
+            console.log("게시글 삭제 액션 호출 -- deleteArticle")
+        },
     }
 })
 
